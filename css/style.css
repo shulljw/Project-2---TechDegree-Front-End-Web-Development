@@ -1,0 +1,304 @@
+/* #f0eceb /* light gray */
+/* #729f98 /* gray-green */
+/* #283018 /* black */
+/* #aa863a /* ochre */
+
+/******************************
+  Element Styles
+******************************/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f8; /* light gray */;
+}
+
+
+/******************************
+  Basic Layout Styles
+******************************/
+
+/* home section */
+.main-header,
+.home-section {
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+.name,
+h2,
+p {
+  color: #5f5f5f;
+}
+
+.main-nav {
+  padding: 0;
+}
+
+.main-nav li {
+  margin-top: .3em;
+}
+
+.main-nav li a {
+  display: block;
+  background-color: white;
+  padding: 10px 15px;
+  color: #5f5f5f;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 75%;
+}
+
+.home-section {
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.home-section p {
+  color: #9f9f9f;
+  font-size: 1.4em;
+  font-family: helvetica;
+  line-height: 1.4em;
+}
+
+.container {
+  padding: 0 1em;
+}
+
+/* portfolio section mobile */
+.portfolio-section {
+  text-align: center;
+  background-color: white;
+  max-width: 100%;
+  padding: 1em 2em;
+}
+
+.portfolio-section img {
+  width: 100%;
+}
+
+.portfolio-item p {
+  line-height: 1.2em;
+  font-size: 1.4em;
+}
+
+/* contact section mobile */
+.contact-section {
+  text-align: center;
+}
+
+.contact-section p {
+  font-size: 1.4em;
+  line-height: 1.7em;
+}
+
+.heavy {
+  font-weight: bold;
+}
+
+.contact-section .container {
+  padding: 2em 1em;
+  border-bottom: 2px solid lightgray;
+}
+
+/* footer section mobile */
+.main-footer .container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main-footer h2 {
+  float: left;
+  font-size: 1em;
+}
+
+.back-to-top a {
+  font-size: .9em;
+  float: right;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #5f5f5f;
+}
+
+.footer-nav {
+  display: none;
+}
+
+
+
+
+
+/******************************
+  Helper Classes
+******************************/
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/******************************
+  Media Queries
+******************************/
+
+@media (min-width: 768px) {
+  
+  
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+  }
+  
+  .main-nav li a {
+    background-color: #f8f8f8;
+  }
+  
+  .profile-image {
+    float: right;
+    width: 45%;
+    margin-bottom: 3em;
+    margin-left: 2em;
+  }
+  
+  .home-section p {
+    text-align: left;
+  }
+  
+  /* portfolio section tablet */
+  
+  .subheader {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  
+  .portfolio-section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portfolio-item {
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+    padding-bottom: 2em;
+  }
+  
+  .portfolio-item p {
+    font-size: 1.4em;
+  }
+  
+  .portfolio-item:nth-child(2n+2) {
+    clear: left;
+  }
+  
+  /* footer section tablet */
+  .back-to-top {
+    display: none;
+  }
+  
+  .footer-nav {
+    display: inline;
+  }
+  
+  .footer-nav {
+    float: right;
+  }
+  
+  .footer-nav li {
+    float: left;
+    margin-left: 2em;
+  }
+  
+  .footer-nav li a {
+    font-weight: bold;
+    color: #5f5f5f;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  /* portfolio section tablet */
+  
+  .name {
+    float: left;
+  }
+  
+  .main-nav {
+    float: right;
+  }
+  
+  .portfolio-section {
+    background-color: transparent;
+  }
+  
+  .portfolio-section p {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .home-section p {
+    font-size: 1.6em;
+  }
+  
+  .portfolio-section .container {
+    background-color: white;
+  }
+  
+  .portfolio-item {
+    width: 33%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+  }
+  
+  .portfolio-item:nth-child(2n+2) {
+    clear: none;
+  }
+  
+  .portfolio-item:nth-child(3n+2) {
+    clear: left;
+  }
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
