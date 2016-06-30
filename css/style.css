@@ -17,6 +17,7 @@ a {
 
 body {
   background-color: #f8f8f8; /* light gray */;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -70,7 +71,6 @@ p {
 .home-section p {
   color: #9f9f9f;
   font-size: 1.4em;
-  font-family: helvetica;
   line-height: 1.4em;
 }
 
@@ -124,8 +124,8 @@ p {
 
 .skills-section .container {
   background-color: #B2968A;
-  margin-top: 2em;
   border-radius: 5px;
+  padding: 6em 0;
 }
 
 .skills-section .col {
@@ -147,6 +147,9 @@ p {
 .skills-section h2 {
   color: #283018 /* black */;
   text-align: center;
+  margin-bottom: 2em;
+  color: white;
+  font-size: 2em;
 }
 
 .skills-section .col {
@@ -265,13 +268,20 @@ p {
   }
   
   /* skills section tablet */
+  
+  .skills-section .container {
+    margin-top: 2em;
+    padding: 2em;
+  }
   .skills-section .col {
-    width: 48%;
-    padding: 1em 2em;
-    float: left;
+    padding: 3em 1em;
     background-color: #f0eceb /* light gray */;
     margin: 1em 1%;
     border-radius: 15px;
+  }
+  
+  .skills-section .col.primary {
+    background: #cfcfcf;
   }
   
   .skills-section p {
@@ -281,7 +291,7 @@ p {
   }
   
   .skills-section h2 {
-    color: #283018 /* black */;
+    color: white;
   }
   
   /* contact section tablet */
@@ -382,6 +392,24 @@ p {
   
   .portfolio-item:nth-child(3n+2) {
     clear: left;
+  }
+  
+  /* skills section desktop */
+  .skills-section .col {
+    float: left;
+    padding: 1em;
+  }
+  
+  .col.primary {
+    width: 44%;
+  }
+  
+  .col.secondary {
+    width: 52%;
+  }
+  
+  .skills-section h2{
+    
   }
   
   
